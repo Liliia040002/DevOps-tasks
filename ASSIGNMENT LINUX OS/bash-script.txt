@@ -1,0 +1,9 @@
+Download and setup Ubuntu Linux from original image or   https://www.osboxes.org/virtualbox-images/ . Run OS. Add a user with your name to the OS and add it to the root group. Re-login. Create a folder with your first name and a file with your last name in that folder. Create a symbolic link to a file. Copy the file to the top directory. Change the owner of the file to root and change its access rights to 644. Show the work done.
+
+* Create a bash script to find all users with /bin/bash CLI in a file password. Load script in to your GitHub repo an provide link as answer.
+
+#bash script
+
+grep '/bin/bash' "$password_file" | cut -d: -f1
+
+# використала команду grep, щоб знайти всі рядки у файлі паролів, які містять рядок "/bin/bash"; за допомогою команди cut, відокремила ім'я користувача, яке є першим полем у кожному рядку файлу /etc/passwd. 
